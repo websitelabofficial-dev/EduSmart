@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSmart - Kursus Online Masa Depan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="fixed w-full z-50 glass-nav shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600 flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg"></div> EduSmart
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-blue-600 transition">Beranda</a>
+                <a href="#about" class="hover:text-blue-600 transition">Tentang</a>
+                <a href="#paket" class="hover:text-blue-600 transition">Paket</a>
+                <a href="#kontak" class="hover:text-blue-600 transition">Kontak</a>
+            </div>
+            <button class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">Daftar</button>
+        </div>
+    </nav>
+
+    <header id="home" class="pt-32 pb-20 px-6">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2" data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+                    Kuasai Skill Baru <br><span class="text-blue-600">Dengan Mudah.</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8">
+                    Platform belajar interaktif yang dirancang untuk membantu Anda mencapai impian karir di era digital. Bergabunglah dengan 10.000+ alumni lainnya.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#paket" class="bg-blue-600 text-white px-8 py-3 rounded-lg shadow-lg hover:shadow-blue-200 transition">Mulai Belajar</a>
+                    <a href="#about" class="border border-gray-300 px-8 py-3 rounded-lg hover:bg-gray-100 transition">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center" data-aos="zoom-in" data-aos-duration="1200">
+                <img src="https://futureskills.id/wp-content/uploads/2023/06/online-class-benefit.jpg" alt="Illustration" class="w-4/5">
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Mengapa Memilih Kami?</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="p-8 border rounded-2xl hover:border-blue-500 transition group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-3xl mb-4">🚀</div>
+                    <h3 class="text-xl font-semibold mb-2">Kurikulum Update</h3>
+                    <p class="text-gray-600">Materi yang disusun selalu mengikuti perkembangan industri terbaru saat ini.</p>
+                </div>
+                <div class="p-8 border rounded-2xl hover:border-blue-500 transition" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-3xl mb-4">👨‍🏫</div>
+                    <h3 class="text-xl font-semibold mb-2">Mentor Ahli</h3>
+                    <p class="text-gray-600">Belajar langsung dari praktisi yang sudah berpengalaman bertahun-tahun di bidangnya.</p>
+                </div>
+                <div class="p-8 border rounded-2xl hover:border-blue-500 transition" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-3xl mb-4">📜</div>
+                    <h3 class="text-xl font-semibold mb-2">Sertifikat Resmi</h3>
+                    <p class="text-gray-600">Dapatkan sertifikat kompetensi setelah menyelesaikan kelas sebagai portofolio Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="paket" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Pilih Paket Belajar</h2>
+                <p class="text-gray-600">Tersedia berbagai pilihan yang sesuai dengan kebutuhan Anda.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border hover:shadow-xl transition" data-aos="flip-left" data-aos-delay="100">
+                    <h3 class="text-lg font-bold text-gray-500 uppercase">Starter</h3>
+                    <div class="text-4xl font-bold my-4">Free</div>
+                    <ul class="space-y-3 mb-8 text-gray-600">
+                        <li>✅ Akses 3 Materi Dasar</li>
+                        <li>✅ Komunitas Discord</li>
+                        <li>❌ Sertifikat</li>
+                    </ul>
+                    <button class="w-full py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition">Pilih Paket</button>
+                </div>
+                <div class="bg-blue-600 p-8 rounded-3xl shadow-lg transform scale-105 text-white" data-aos="flip-left" data-aos-delay="200">
+                    <h3 class="text-lg font-bold opacity-80 uppercase">Premium (Best Seller)</h3>
+                    <div class="text-4xl font-bold my-4">Rp 149k <span class="text-sm font-normal">/bulan</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li>✅ Akses Semua Materi</li>
+                        <li>✅ Group Mentoring</li>
+                        <li>✅ Sertifikat Resmi</li>
+                        <li>✅ Review Tugas</li>
+                    </ul>
+                    <button class="w-full py-3 bg-white text-blue-600 rounded-lg font-bold hover:bg-gray-100 transition">Daftar Sekarang</button>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border hover:shadow-xl transition" data-aos="flip-left" data-aos-delay="300">
+                    <h3 class="text-lg font-bold text-gray-500 uppercase">Pro</h3>
+                    <div class="text-4xl font-bold my-4">Rp 499k <span class="text-sm font-normal">/kursus</span></div>
+                    <ul class="space-y-3 mb-8 text-gray-600">
+                        <li>✅ Akses Selamanya</li>
+                        <li>✅ 1-on-1 Mentoring</li>
+                        <li>✅ Bantuan Penyaluran Kerja</li>
+                    </ul>
+                    <button class="w-full py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition">Pilih Paket</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="kontak" class="bg-gray-900 text-gray-300 pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="text-2xl font-bold text-white flex items-center gap-2 mb-6">
+                        <div class="w-8 h-8 bg-blue-600 rounded-lg"></div> EduSmart
+                    </div>
+                    <p class="text-sm leading-relaxed">
+                        Membangun generasi cerdas dengan akses pendidikan digital terbaik dan terjangkau di seluruh Indonesia.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Link Cepat</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-blue-400">Kelas Desain</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Kelas Coding</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Kontak Kami</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li>📍 Jl. Pendidikan No. 123, Jakarta</li>
+                        <li>📞 +62 812 3456 7890</li>
+                        <li>✉️ halo@edusmart.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Newsletter</h4>
+                    <div class="flex gap-2">
+                        <input type="text" placeholder="Email Anda" class="bg-gray-800 border-none rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-blue-600">
+                        <button class="bg-blue-600 p-2 rounded-lg text-white font-bold">></button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-xs">
+                © 2025 EduSmart Indonesia. Seluruh Hak Cipta Dilindungi.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true, // Animasi hanya berjalan sekali saat scroll
+            duration: 800,
+        });
+    </script>
+</body>
+</html>
